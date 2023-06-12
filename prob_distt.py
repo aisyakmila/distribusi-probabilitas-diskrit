@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from scipy import stats
-from streamlit_option_menu import option_menu
+import streamlit_option_menu as option_menu
 
 with st.sidebar:
     selected = option_menu(
