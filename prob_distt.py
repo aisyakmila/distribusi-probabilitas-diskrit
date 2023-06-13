@@ -1,8 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy import stats
-from streamlit_option_menu import option_menu
 
 test = st.sidebar.selectbox("Distribusi Diskrit", ['Binomial', 'Hipergeometrik', 'Geometrik', 'Binomial Negatif','Poisson'])
 
