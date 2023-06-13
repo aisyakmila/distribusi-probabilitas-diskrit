@@ -2,27 +2,8 @@ import streamlit as st
 import numpy as np
 from scipy import stats
 
-test = st.sidebar.selectbox("Distribusi Diskrit", ['Home', 'Binomial', 'Hipergeometrik', 'Geometrik', 'Binomial Negatif','Poisson'])
+test = st.sidebar.selectbox("Distribusi Diskrit", ['Binomial', 'Hipergeometrik', 'Geometrik', 'Binomial Negatif','Poisson'])
 
-if (test == "Home"):
-    st.title("Menghitung Probabilitas Distribusi Diskrit")
-    st.markdown("---")
-    st.markdown("""
-        Distribusi probabilitas diskrit adalah suatu daftar atau distribusi di mana variabel 
-        randomnya mengasumsikan masing-masing nilainya dengan probabilitas tertentu. Variabel 
-        diskrit memiliki jumlah nilai kemungkinan yang terbatas atau jumlah yang tak terhingga 
-        dari nilai-nilai yang dapat dihitung
-        
-        Melalui web apps ini anda dapat menghitung probabilitas dari beberapa macam
-        distribusi probabilitas diskrit, yaitu
-        1. Distribusi Binomial
-        2. Hipergeometrik
-        3. Geometrik
-        4. Binomial Negatif
-        5. Poisson
-
-        """)
-    
 if (test == "Binomial"):
     st.title("Distribusi Binomial")
 
